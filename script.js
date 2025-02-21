@@ -107,6 +107,10 @@ clearButton.addEventListener('click', () => {
 
     const gifImage = document.getElementById("gif-image");
     gifImage.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXZvdmRldjF2M2l2c2hzemFuZWIzNzJkYXR3ZWVkanJzY2Z5dmlxbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/m8d64EAqfMGm5JbrTx/giphy.gif";
+
+    if (window.innerWidth <= 768) {
+        document.querySelector('.calc-box').scrollIntoView({ behavior: 'smooth' });
+    }
 });
 
 calculateButton.addEventListener('click', () => {
